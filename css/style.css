@@ -1,7 +1,57 @@
+@font-face {
+  font-family: 'Stem-Regular';
+  src: url("../fonts/Stem-Regular.eot");
+  src: url("../fonts/Stem-Regular.eot") format("embedded-opentype"), url("../fonts/Stem-Regular.woff") format("woff"), url("../fonts/Stem-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stem-Bold';
+  src: url("../fonts/Stem-Bold.eot");
+  src: url("../fonts/Stem-Bold.eot") format("embedded-opentype"), url("../fonts/Stem-Bold.woff") format("woff"), url("../fonts/Stem-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stem-Medium';
+  src: url("../fonts/Stem-Medium.eot");
+  src: url("../fonts/Stem-Medium.eot") format("embedded-opentype"), url("../fonts/Stem-Medium.woff") format("woff"), url("../fonts/Stem-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Stem-Regular', sans-serif;
+  color: #121212;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   max-width: 1140px;
   margin: auto;
   bottom: 1px solid black;
+  height: 100%;
+}
+
+.button {
+  width: 277px;
+  height: 40px;
+  background-color: #e55a22;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+.header {
+  display: block;
+  height: 110px;
 }
 
 .header-wrap {
@@ -11,11 +61,57 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+
+.header__logo {
+  font-size: 50px;
+  color: #e55a22;
+  margin-bottom: 20px;
+  font-family: 'Stem-Bold', sans-serif;
+}
+
+.header__logo_blue {
+  color: #291057;
+}
+
+.header__search {
+  position: relative;
 }
 
 .header__phone {
   display: block;
   text-decoration: none;
+  font-size: 30px;
+  color: #121212;
+  font-family: 'Stem-Medium', sans-serif;
+}
+
+.header__button {
+  margin-top: 5px;
+}
+
+.search {
+  width: 420px;
+  height: 30px;
+  color: #797879;
+  font-size: 16px;
+  letter-spacing: 0.42px;
+  padding: 5px 44px 0 10px;
+}
+
+.search__image {
+  display: block;
+  width: 44px;
+  height: 39px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../img/search.png") no-repeat center center #291057;
+  cursor: pointer;
 }
 
 .navbar__ul {

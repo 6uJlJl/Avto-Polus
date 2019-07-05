@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Stem-Regular';
+    src: url('../fonts/Stem-Regular.eot');
+    src: url('../fonts/Stem-Regular.eot') format('embedded-opentype'),
+    url('../fonts/Stem-Regular.woff') format('woff'),
+    url('../fonts/Stem-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin regular {
+    font-family: 'Stem-Regular', sans-serif
+}
+
+@font-face {
+    font-family: 'Stem-Bold';
+    src: url('../fonts/Stem-Bold.eot');
+    src: url('../fonts/Stem-Bold.eot') format('embedded-opentype'),
+    url('../fonts/Stem-Bold.woff') format('woff'),
+    url('../fonts/Stem-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin bold {
+    font-family: 'Stem-Bold', sans-serif
+}
+
+@font-face {
+    font-family: 'Stem-Medium';
+    src: url('../fonts/Stem-Medium.eot');
+    src: url('../fonts/Stem-Medium.eot') format('embedded-opentype'),
+    url('../fonts/Stem-Medium.woff') format('woff'),
+    url('../fonts/Stem-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin medium {
+    font-family: 'Stem-Medium', sans-serif
+}

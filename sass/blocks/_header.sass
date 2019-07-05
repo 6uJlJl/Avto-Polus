@@ -1,7 +1,43 @@
 .header
+    display: block
+    height: 110px
     &-wrap 
         display: flex
-        justify-content: space-between 
+        justify-content: space-between
+        align-items: flex-end
+        height: 100%
+    &__logo
+        font-size: 50px
+        color: $orange
+        margin-bottom: 20px
+        +bold
+        &_blue
+            color: $blue
+    &__search
+        position: relative
     &__phone
         display: block
         text-decoration: none
+        font-size: 30px
+        color: $black
+        +medium
+    &__button
+        margin-top: 5px
+
+.search
+    width: 420px
+    height: 30px
+    color: $grey
+    font-size: 16px
+    letter-spacing: 0.42px
+    padding: 5px 44px 0 10px
+    &__image
+        display: block
+        width: 44px
+        height: 39px
+        position: absolute
+        top: 0
+        right: 0
+        background: url("../img/search.png") no-repeat center center $blue
+        cursor: pointer
+    
