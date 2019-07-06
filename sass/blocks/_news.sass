@@ -1,0 +1,62 @@
+.news
+    margin-top: 60px;
+    &-wrap 
+        display: flex
+    &__company
+        flex: 1
+    &__kamaz
+        flex: 2
+    &__title
+        max-width: 360px
+        position: relative
+        font-size: 30px
+        color: $black
+        padding-bottom: 15px
+        border-bottom: 1px solid $grey
+        +bold
+        &:before
+            content: ""
+            position: absolute
+            width: 45px
+            height: 5px
+            background-color: $grey
+            bottom: -3px
+    &__arrow
+        position: absolute
+        right: 0
+        bottom: 0
+        cursor: pointer
+.company
+    &__item:not(:last-child)
+        margin-bottom: 50px
+    &__text
+        max-width: 350px
+        line-height: 30px
+        font-size: 20px
+    &__date
+        font-size: 18px
+        color: $grey
+.kamaz
+    &__item
+        margin-top: 30px
+        display: flex
+        justify-content: space-between
+        position: relative
+    &__item-text
+        margin-left: 30px
+    &__title
+        display: block
+        font-size: 20px
+        color: $blue
+        line-height: 30px
+        margin-bottom: 20px
+        +medium
+    &__text
+        display: block
+        font-size: 18px
+        line-height: 28px
+        margin-bottom: 30px
+    &__date
+        font-size: 18px;
+        color: $grey
+    
