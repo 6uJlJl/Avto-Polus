@@ -448,4 +448,124 @@ body {
   font-size: 18px;
   color: #797879;
 }
+
+.questions {
+  margin-top: 65px;
+}
+
+.questions-wrap {
+  width: 100%;
+  height: 553px;
+  background: url("../img/questions/questions-bg.png");
+  position: relative;
+}
+
+.questions__form {
+  height: 523px;
+  width: 457px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px;
+  margin-left: 100px;
+  background-color: rgba(41, 16, 87, 0.7);
+}
+
+.form__title {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.form__name {
+  height: 53px;
+  width: 80%;
+  background: none;
+  border: 1px solid #fff;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.form__name::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__name:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__name::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__name::placeholder {
+  color: #fff;
+}
+
+.form__phone {
+  height: 53px;
+  width: 80%;
+  background: none;
+  border: 1px solid #fff;
+  font-size: 18px;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.form__phone::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__phone:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__phone::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__phone::placeholder {
+  color: #fff;
+}
+
+.form__text {
+  width: 76%;
+  background: none;
+  border: 1px solid #fff;
+  font-size: 18px;
+  color: #fff;
+  padding: 20px;
+}
+
+.form__text::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form__text:-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__text::-ms-input-placeholder {
+  color: #fff;
+}
+
+.form__text::placeholder {
+  color: #fff;
+}
+
+.form__button {
+  text-transform: uppercase;
+  width: 263px;
+  height: 60px;
+}
 /*# sourceMappingURL=style.css.map */

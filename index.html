@@ -272,10 +272,31 @@
         </section>
         <!-- /.news -->
 
+        <section class="questions">
+            <div class="container">
+                <div class="questions-wrap">
+                    <form action="POST" class="questions__form">
+                        <span class="form__title">У Вас есть вопросы?<br>Пишите!</span>
+                        <!-- /.form__title -->
+                        <input type="text" name="name" class="form__name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" class="form__phone" placeholder="Контактный телефон" required>
+                        <textarea class="form__text" name="" id="" cols="30" rows="5" placeholder="Вопрос / Сообщение" required></textarea>
+                        <button class="button form__button" type="submut">Отправить</button>
+                        <!-- /#.form__text button form__button -->
+                    </form>
+                    <!-- /.question__form -->
+                </div>
+                <!-- /.question-wrap -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.questions -->
+
     </main>
 
     <script src="scripts/jquery-3.4.1.slim.min.js"></script>
     <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/jquery.maskedinput.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
