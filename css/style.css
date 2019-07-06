@@ -34,7 +34,6 @@ body {
 .container {
   max-width: 1140px;
   margin: auto;
-  bottom: 1px solid black;
   height: 100%;
 }
 
@@ -226,5 +225,36 @@ body {
   width: 550px;
   height: 200px;
   background: url(../img/banners/banners-offer.png) no-repeat center center;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-container-brands {
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-container-brands .swiper-button-next {
+  background-image: url(/img/brands/arrow-black-right.png);
+  right: 0;
+  background-color: #fff;
+  height: 50px;
+  top: 40%;
+}
+
+.swiper-container-brands .swiper-button-prev {
+  background-image: url(/img/brands/arrow-black-right.png);
+  left: 0;
+  background-color: #fff;
+  height: 50px;
+  top: 40%;
 }
 /*# sourceMappingURL=style.css.map */
