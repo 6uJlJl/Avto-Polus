@@ -177,4 +177,54 @@ body {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 14px;
 }
+
+.banners {
+  height: 100%;
+  padding-top: 36px;
+}
+
+.banners__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banners__link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.banners__text {
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.banners__title {
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: 'Stem-Bold', sans-serif;
+}
+
+.banners__description {
+  margin: 0;
+  font-size: 19px;
+}
+
+.banners__search {
+  width: 550px;
+  height: 200px;
+  background: url(../img/banners/banners-search.png) no-repeat center center;
+}
+
+.banners__offer {
+  width: 550px;
+  height: 200px;
+  background: url(../img/banners/banners-offer.png) no-repeat center center;
+}
 /*# sourceMappingURL=style.css.map */
