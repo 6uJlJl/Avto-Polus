@@ -2,6 +2,7 @@
     margin-top: 60px;
     &-wrap 
         display: flex
+        flex-wrap: wrap
     &__company
         flex: 1
     &__kamaz
@@ -41,15 +42,19 @@
         margin-top: 30px
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
         position: relative
-    &__item-text
-        margin-left: 30px
+    &__image
+        margin-right: 30px
+    &__text
+        max-width: 370px
     &__title
         display: block
         font-size: 20px
         color: $blue
         line-height: 30px
         margin-bottom: 20px
+        max-width: 370px
         +medium
     &__text
         display: block

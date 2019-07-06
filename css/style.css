@@ -50,7 +50,7 @@ body {
 
 .header {
   display: block;
-  height: 110px;
+  min-height: 110px;
 }
 
 .header-wrap {
@@ -63,6 +63,8 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 100%;
 }
 
@@ -119,6 +121,8 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   padding-bottom: 10px;
@@ -131,6 +135,7 @@ body {
 
 .navbar__item {
   position: relative;
+  margin: 0 20px;
 }
 
 .navbar__item_active:before {
@@ -189,6 +194,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .banners__link {
@@ -263,6 +270,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .benefits__items {
@@ -358,6 +367,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news__company {
@@ -421,11 +432,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
 }
 
-.kamaz__item-text {
-  margin-left: 30px;
+.kamaz__image {
+  margin-right: 30px;
+}
+
+.kamaz__text {
+  max-width: 370px;
 }
 
 .kamaz__title {
@@ -434,6 +451,7 @@ body {
   color: #291057;
   line-height: 30px;
   margin-bottom: 20px;
+  max-width: 370px;
   font-family: 'Stem-Medium', sans-serif;
 }
 
@@ -582,6 +600,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__contacts {
