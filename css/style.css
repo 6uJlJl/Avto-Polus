@@ -238,6 +238,7 @@ body {
 
 .swiper-container-brands {
   margin-top: 50px;
+  margin-bottom: 70px;
   position: relative;
   overflow: hidden;
 }
@@ -256,5 +257,95 @@ body {
   background-color: #fff;
   height: 50px;
   top: 40%;
+}
+
+.benefits-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits__items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefits__description {
+  display: block;
+  width: 100%;
+  margin-right: 20px;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.benefits__description:before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background-color: #797879;
+  bottom: -3px;
+}
+
+.benefits__description-1:before {
+  left: 50px;
+}
+
+.benefits__description-2:before {
+  left: 150px;
+}
+
+.benefits__description-3:before {
+  left: 250px;
+}
+
+.benefits__welcome {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background: url("../img/benefits/benefits-bg.png") no-repeat;
+  background-size: cover;
+  height: 440px;
+  position: relative;
+}
+
+.benefits__text {
+  max-width: 320px;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 50px;
+}
+
+.benefits__text:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 30px;
+  background-color: #291057;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=style.css.map */
