@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>АвтоПолюс</title>
 </head>
@@ -62,15 +63,39 @@
     <!-- /.navbar -->
 
     <div class="slider">
-        <div class="container">
-            <div class="slider__item">
-                <!-- <img src="img/slider/slide-1.png" alt="">
-                <img src="img/slider/slide-2.png" alt="">
-                <img src="img/slider/slide-3.png" alt="">
-                <img src="img/slider/slide-4.png" alt="">
-                <img src="img/slider/slide-5.png" alt=""> -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="slider__image" src="img/slider/slide-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__image" src="img/slider/slide-2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__image" src="img/slider/slide-3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__image" src="img/slider/slide-4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__image" src="img/slider/slide-5.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__image" src="img/slider/slide-6.png" alt="">
+                </div>
             </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
+
+    <script src="scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -143,4 +143,38 @@ body {
   background-color: #291057;
   bottom: -13px;
 }
+
+.slider__image {
+  width: 100%;
+}
+
+.swiper-button-prev {
+  color: #fff;
+  background-image: url("/img/slider/arrow-right.png");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-size: 27px 73px;
+}
+
+.swiper-button-next {
+  background-image: url("/img/slider/arrow-right.png");
+  background-size: 27px 73px;
+}
+
+.swiper-pagination-bullet {
+  width: 27px;
+  height: 7px;
+  background-color: #797879;
+  border-radius: 0px;
+  opacity: 1;
+  outline: none;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 14px;
+}
 /*# sourceMappingURL=style.css.map */
