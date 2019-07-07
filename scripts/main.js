@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-  
+  // настройки слайдера в блоке slider
     var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
         direction: 'horizontal',
@@ -16,6 +16,7 @@ $(document).ready(function () {
         }
     })
 
+  // настройки слайдера в блоке brands
     var mySwiper1 = new Swiper ('.swiper-container-brands', {
       // Optional parameters
       slidesPerView: 5,
@@ -29,6 +30,7 @@ $(document).ready(function () {
       }
     })
 
-    // Маска ввода для телефонв
+  // Маска ввода для телефонов
     $(".form__phone").mask("+7 (999) 999-99-99");
+    
   });
