@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>АвтоПолюс</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>АвтоПолюс</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header-wrap">
-                <a href="http://z116.ru/"><div class="logo header__logo">Авто<span class="header__logo_blue">Полюс</span></div></a>
+                <a href="http://avtopolus-kamaz.ru//"><div class="logo header__logo">Авто<span class="header__logo_blue">Полюс</span></div></a>
                 <!-- /.header__logo -->
-                <div class="header__search">
-                    <input class="search" type="text" placeholder="Введите артикул и название детали">
+                <form action="/price/" method="GET" class="header__search">
+                    <input class="search" type="text" name="query" placeholder="Введите артикул и название детали">
                     <span class="search__image"></span>
-                </div>
+                </form>
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:+79061348377">8 (906) 134-83-77</a>
                     <a href="http://z116.ru/feedback/" class="header__callback">Обратный звонок</a>
@@ -33,27 +34,27 @@
         <div class="container">
             <ul class="navbar__ul">
                 <li class="navbar__item navbar__item_active">
-                    <a href="http://z116.ru/" class="navbar__link">Главная</a> 
+                    <a href="http://z116.ru/" class="navbar__link">Главная</a>
                 </li>
                 <!-- /.navbar__item -->
                 <li class="navbar__item">
-                    <a href="http://z116.ru/o-kompanii/" class="navbar__link">О компании</a> 
+                    <a href="http://z116.ru/o-kompanii/" class="navbar__link">О компании</a>
                 </li>
                 <!-- /.navbar__item -->
                 <li class="navbar__item">
-                    <a href="http://z116.ru/price/" class="navbar__link">Запчасти КАМАЗ</a> 
+                    <a href="http://z116.ru/price/" class="navbar__link">Запчасти КАМАЗ</a>
                 </li>
                 <!-- /.navbar__item -->
                 <li class="navbar__item">
-                    <a href="http://z116.ru/prajs-listy/" class="navbar__link">Прайс листы</a> 
+                    <a href="http://z116.ru/prajs-listy/" class="navbar__link">Прайс листы</a>
                 </li>
                 <!-- /.navbar__item -->
                 <li class="navbar__item">
-                    <a href="http://z116.ru/kontakty/" class="navbar__link">Контакты</a> 
+                    <a href="http://z116.ru/kontakty/" class="navbar__link">Контакты</a>
                 </li>
                 <!-- /.navbar__item -->
                 <li class="navbar__item">
-                    <a href="http://z116.ru/spec/" class="navbar__link">Спецпредложения</a> 
+                    <a href="http://z116.ru/spec/" class="navbar__link">Спецпредложения</a>
                 </li>
                 <!-- /.navbar__item -->
             </ul>
@@ -94,7 +95,7 @@
             </div>
         </section>
         <!-- /.slider -->
-    
+
         <section class="banners">
             <div class="container">
                 <div class="banners__wrap">
@@ -126,7 +127,7 @@
             <!-- /.container -->
         </section>
         <!-- /.banners -->
-    
+
         <section class="brands">
             <div class="swiper-container-brands container">
                 <div class="swiper-wrapper">
@@ -148,7 +149,7 @@
             <!-- /.swiper-container-brands -->
         </section>
         <!-- /.brands -->
-        
+
         <section class="benefits">
             <div class="container">
                 <div class="benefits-wrap">
@@ -272,12 +273,12 @@
         <section class="questions">
             <div class="container">
                 <div class="questions-wrap">
-                    <form action="POST" class="questions__form">
+                    <form enctype="multipart/form-data" method="post" id="form" class="questions__form">
                         <span class="form__title">У Вас есть вопросы?<br>Пишите!</span>
                         <!-- /.form__title -->
                         <input type="text" name="name" class="form__name" placeholder="Ваше имя" required>
                         <input type="tel" name="phone" class="form__phone" placeholder="Контактный телефон" required>
-                        <textarea class="form__text" name="" id="" cols="30" rows="5" placeholder="Вопрос / Сообщение" required></textarea>
+                        <textarea class="form__text" name="text" id="" cols="30" rows="5" placeholder="Вопрос / Сообщение" required></textarea>
                         <button class="button form__button" type="submut">Отправить</button>
                         <!-- /#.form__text button form__button -->
                     </form>
@@ -296,32 +297,32 @@
             <div class="footer__nav">
                 <ul class="footer__ul">
                     <li class="footer__li">
-                        <a href="http://z116.ru/" class="footer__a">Главная</a> 
+                        <a href="http://z116.ru/" class="footer__a">Главная</a>
                         <!-- /.footer__a -->
                     </li>
                     <!-- /.footer__li -->
                     <li class="footer__li">
-                        <a href="http://z116.ru/o-kompanii/" class="footer__a">О компании</a> 
+                        <a href="http://z116.ru/o-kompanii/" class="footer__a">О компании</a>
                         <!-- /.footer__a -->
                     </li>
                     <!-- /.footer__li -->
                     <li class="footer__li">
-                        <a href="http://z116.ru/price/" class="footer__a">Запчасти КАМАЗ</a> 
+                        <a href="http://z116.ru/price/" class="footer__a">Запчасти КАМАЗ</a>
                         <!-- /.footer__a -->
                     </li>
                     <!-- /.footer__li -->
                     <li class="footer__li">
-                        <a href="http://z116.ru/prajs-listy/" class="footer__a">Прайс листы</a> 
+                        <a href="http://z116.ru/prajs-listy/" class="footer__a">Прайс листы</a>
                         <!-- /.footer__a -->
                     </li>
                     <!-- /.footer__li -->
                     <li class="footer__li">
-                        <a href="http://z116.ru/kontakty/" class="footer__a">Контакты</a> 
+                        <a href="http://z116.ru/kontakty/" class="footer__a">Контакты</a>
                         <!-- /.footer__a -->
                     </li>
                     <!-- /.footer__li -->
                     <li class="footer__li">
-                        <a href="http://z116.ru/spec/" class="footer__a">Спецпредложения</a> 
+                        <a href="http://z116.ru/spec/" class="footer__a">Спецпредложения</a>
                         <!-- /.footer__a -->
                     </li>
                     <!-- /.footer__li -->
@@ -346,7 +347,7 @@
     </footer>
     <!-- /.footer -->
 
-    <script src="scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/swiper.min.js"></script>
     <script src="scripts/jquery.maskedinput.min.js"></script>
     <script src="scripts/main.js"></script>
