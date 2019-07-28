@@ -30,6 +30,20 @@ $(document).ready(function () {
       }
     })
 
+  // настройки слайдера на странице about
+  var mySwiper1 = new Swiper ('.swiper-container-about', {
+    // Optional parameters
+    slidesPerView: 5,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })
+
   //Скролл к форме на кнопке "Обратный звонок"
   $(".header__callback").click((event)=>{
     event.preventDefault();
@@ -38,12 +52,17 @@ $(document).ready(function () {
   })
 
   // Маска ввода для телефонов
-    $(".form__phone").mask("+7 (999) 999-99-99");
+  $(".form__phone").mask("+7 (999) 999-99-99");
 
   // Обработка формы поиска в шапке
   $(".header__search").on("submit", function(event){
     event.preventDefault();
     $(".search").val("");
+  })
+
+  $(".secondary__form").on("submit", function(event){
+    event.preventDefault();
+    $(".secondary__input").val("");
   })
 
   // Обработка формы "Есть вопрос?"

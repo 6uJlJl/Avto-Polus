@@ -1,0 +1,22 @@
+.add
+  &__nav
+    margin-top: 26px
+  &__link
+    display: inline-block
+    font-size: 16px
+    letter-spacing: 0.42px;
+    color: $black
+    padding-right: 25px
+    position: relative
+    &::after
+      content: ""
+      width: 7px
+      height: 16px
+      background: url("../img/about/right_arrow.png") no-repeat center
+      right: 5px
+      top: 3px
+      position: absolute
+    &:last-child::after
+      background: none;
+
+
