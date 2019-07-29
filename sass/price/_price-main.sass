@@ -1,0 +1,62 @@
+.price
+  &-main
+    &__wrapper
+      position: relative
+      margin-bottom: 40px
+    &__info
+      position: absolute
+      width: 454px
+      height: 235px
+      margin-top: 76px
+      top: 0
+      &::before
+        content: ''
+        position: absolute
+        width: 96%
+        height: 92%
+        left: 2%
+        top: 4%
+        border: 1px solid #c9c8ff;
+        z-index: 10;
+      &--left
+        margin-left: 46px
+        left: 0
+      &--right
+        margin-right: 46px
+        right: 0
+    &__part1
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 50%
+      background: url("../img/price/price-bg.png") no-repeat top
+      background-size: cover
+    &__part2
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 50%
+      background: #fff
+      position: relative
+      &::before
+        content: ""
+        position: absolute
+        width: 87px
+        height: 79px
+        background: url("../img/price/download-link.png")
+        left: 36px
+        top: 9px
+    &__title
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 1.2px;
+    &__subtitle
+      width: 160px;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.42px;
+      text-align: center
+  &__questions
+    margin-top: 0
