@@ -36,3 +36,13 @@
 @mixin medium {
     font-family: 'Stem-Medium', sans-serif
 }
+
+@font-face {
+  font-family: "ALS Rubl";
+  src: url('../fonts/rouble.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin rouble {
+  font-family: 'ALS Rubl', sans-serif
+}

@@ -1,0 +1,43 @@
+.offer
+  &-main
+    &__list
+      display: flex
+      justify-content: space-around
+      flex-direction: column
+      align-items: center
+    &__item
+      display: flex
+      align-items: center
+      height: 253px
+      margin-bottom: 37px
+    &__text
+      width: 500px
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 23px 170px 45px 49px
+      box-sizing: border-box
+    &__title
+      font-size: 20px
+      font-weight: 500
+      line-height: 30px
+      color: #fff
+      letter-spacing: 0.6px
+    &__price
+      color: #ffffff
+      font-size: 30px
+      font-weight: 700
+      line-height: 45px
+      letter-spacing: 1.2px
+      &--rouble
+        +rouble
+    &__img
+      width: 310px
+      margin-left: -40px
+    &__bg--orange
+      background: url("../img/offer/offer-bg-orange.png") no-repeat
+      background-size: cover
+    &__bg--blue
+      background: url("../img/offer/offer-bg-blue.png") no-repeat
+      background-size: cover
