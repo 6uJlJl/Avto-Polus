@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" href="img/favicon.ico">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Прайс-листы</title>
+  <title>Контакты</title>
 </head>
 <body>
   <header class="header">
@@ -44,12 +44,12 @@
           <a href="" class="navbar__link">Запчасти КАМАЗ</a>
         </li>
         <!-- /.navbar__item -->
-        <li class="navbar__item navbar__item_active">
+        <li class="navbar__item">
           <a href="price.html" class="navbar__link">Прайс листы</a>
         </li>
         <!-- /.navbar__item -->
-        <li class="navbar__item">
-          <a href="contacts.html" class="navbar__link">Контакты</a>
+        <li class="navbar__item navbar__item_active">
+          <a href="" class="navbar__link">Контакты</a>
         </li>
         <!-- /.navbar__item -->
         <li class="navbar__item">
@@ -79,7 +79,7 @@
     <div class="container">
       <a href="index.html" class="add__link">Главная</a>
       <!-- /.add__link -->
-      <a href="" class="add__link">Прайс-листы</a>
+      <a href="" class="add__link">Контакты</a>
       <!-- /.add__link -->
     </div>
   </section>
@@ -87,34 +87,57 @@
 
   <section class="main">
     <div class="container">
-      <h2 class="main__title">Прайс-листы</h2>
+      <h2 class="main__title">Контакты</h2>
       <!-- /.main__title -->
-      <div class="price-main__wrapper">
-        <img src="./img/price/price-image-1.png" alt="">
-        <div class="price-main__info price-main__info--left">
-          <div class="price-main__part1">
-            <span class="price-main__title">Скачайте</span>
+      <div class="contacts-main__wrapper">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46e29bf451bedaa1c64068f4a521d5dd7ce6fba3817918a4490360724796f86d&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+        <div class="contacts-main__info contacts-main__info--left">
+          <div class="contacts-main__part1">
+            <span class="contacts-main__title">Офис и склад</span>
           </div>
-          <div class="price-main__part2">
-            <span class="price-main__subtitle">на запчасти КАМАЗ</span>
-          </div>
-        </div>
-      </div>
-      <div class="price-main__wrapper">
-        <img src="./img/price/price-image-2.png" alt="">
-        <div class="price-main__info price-main__info--right">
-          <div class="price-main__part1">
-            <span class="price-main__title">Скачайте</span>
-          </div>
-          <div class="price-main__part2">
-            <span class="price-main__subtitle">на двигатели, кпп, редукторы КАМАЗ</span>
+          <div class="contacts-main__part2">
+            <span class="contacts-main__span contacts-main__span--map">г. Набережные Челны, ул.Ахметшина, 123 (возле ГИБДД), оф.104</span>
+            <span class="contacts-main__span contacts-main__span--mail"><a href="mailto:avtopolus2019@mail.ru">avtopolus2019@mail.ru</a></span>
+            <span class="contacts-main__span contacts-main__span--phone"><a href="tel:89061348377">8 (906) 134-83-77</a></span>
           </div>
         </div>
       </div>
+
+      <div class="contacts-main__wrapper">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46e29bf451bedaa1c64068f4a521d5dd7ce6fba3817918a4490360724796f86d&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+          <div class="contacts-main__info contacts-main__info--right">
+            <div class="contacts-main__part1">
+              <span class="contacts-main__title">Магазин</span>
+            </div>
+            <div class="contacts-main__part2">
+              <span class="contacts-main__span contacts-main__span--map">г. Чебоксары, Ишлейское шоссе, дом 8, зд. маг. "АвтоПолюс"</span>
+              <span class="contacts-main__span contacts-main__span--mail"><a href="mailto:misha367@mail.ru">misha367@mail.ru</a></span>
+              <span class="contacts-main__span contacts-main__span--phone"><a href="tel:88352507835">8 (8352) 50-78-35</a></span>
+            </div>
+          </div>
+        </div>
     </div>
   </section>
 
-  <section class="questions price__questions">
+  <section class="contacts__requisites">
+    <div class="container">
+      <h2 class="main__title">Реквизиты</h2>
+      <p>ООО ФК «Лаки-Трейд»<br>
+        Директор: Парфёнов Михаил Вячеславович<br>
+        ИНН / КПП 1650275967 / 165001001   ОГРН 1131650021546  ОКПО   ОКАТО 97401368000<br>
+        Расчетный счет 40702810300000015425  В АКБ «Чувашкредитпромбанк» г. Чебоксары<br>
+        БИК 049706725  Корр. счет 30101810200000000725<br>
+          </p>
+      <p>ИП Парфёнов Михаил Вячеславович<br>
+        Республика Чувашия г.Чебоксары  Ишлейское шоссе д.8<br>
+        ИНН 165045857010 ОГРН ИП 310165007600013<br>
+        Расчетный счет 40802810400000135208 В ЗАО АКБ "Экспресс-Волга" г. Саратов<br>
+        БИК 046311808 Корр. счет 30101810600000000808</p>
+    </div>
+
+  </section>
+
+  <section class="questions">
       <div class="container">
           <div class="questions-wrap">
               <form enctype="multipart/form-data" method="post" id="form" class="questions__form">
@@ -154,12 +177,12 @@
                   </li>
                   <!-- /.footer__li -->
                   <li class="footer__li">
-                      <a href="" class="footer__a">Прайс листы</a>
+                      <a href="price.html" class="footer__a">Прайс листы</a>
                       <!-- /.footer__a -->
                   </li>
                   <!-- /.footer__li -->
                   <li class="footer__li">
-                      <a href="contacts.html" class="footer__a">Контакты</a>
+                      <a href="" class="footer__a">Контакты</a>
                       <!-- /.footer__a -->
                   </li>
                   <!-- /.footer__li -->

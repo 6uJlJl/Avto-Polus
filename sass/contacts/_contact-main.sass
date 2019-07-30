@@ -1,0 +1,99 @@
+.contacts
+  &-main
+    &__wrapper
+      position: relative
+      margin-bottom: 40px
+    &__info
+      position: absolute
+      width: 454px
+      min-height: 235px
+      margin-top: 40px
+      top: 0
+      z-index: 1000
+      &::before
+        content: ''
+        position: absolute
+        width: 96%
+        height: 92%
+        left: 2%
+        top: 4%
+        border: 1px solid #c9c8ff;
+        z-index: 10;
+      &--left
+        margin-left: 100px
+        left: 0
+      &--right
+        margin-right: 46px
+        right: 0
+    &__part1
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 50%
+      background: url("../img/price/price-bg.png") no-repeat top
+      background-size: cover
+      padding-top: 47px
+      padding-bottom: 35px
+    &__title
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 1.2px;
+    &__part2
+      display: flex
+      flex-direction: column
+      height: 50%
+      background: #fff
+      position: relative
+      padding: 37px
+    &__span
+      display: flex
+      align-items: center
+      margin-bottom: 50px
+      padding-left: 54px
+      min-height: 37px
+      position: relative
+      font-size: 16px
+      &:last-child
+        margin-bottom: 20px
+      & a
+        color: $black
+        cursor: pointer !important
+      &--map::before
+        content: ""
+        position: absolute
+        width: 37px
+        height: 37px
+        background: url("../img/contacts/icon-map.png") no-repeat center
+        left: 0
+        border: 1px solid $black
+        border-radius: 37px
+      &--mail::before
+        content: ""
+        position: absolute
+        width: 37px
+        height: 37px
+        background: url("../img/contacts/icon-mail.png") no-repeat center
+        left: 0
+        border: 1px solid $black
+        border-radius: 37px
+      &--phone::before
+        content: ""
+        position: absolute
+        width: 37px
+        height: 37px
+        background: url("../img/contacts/icon-phone.png") no-repeat center
+        left: 0
+        border: 1px solid $black
+        border-radius: 37px
+    &__span:not(:last-child)
+      &::after
+        content: ""
+        position: absolute
+        width: 1px
+        height: 125%
+        background-color: $black
+        left: 19px
+        top: 39px
+
