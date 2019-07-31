@@ -986,6 +986,7 @@ a {
   line-height: 26px;
   letter-spacing: 0.42px;
   text-align: center;
+  color: #121212;
 }
 
 .price__questions {
@@ -1236,7 +1237,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 308px;
+  width: 27%;
   padding: 20px;
   margin: 15px;
   border: 1px solid #959595;
@@ -1271,6 +1272,7 @@ a {
 
 .shop-main__image {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .shop-main__name {
@@ -1301,5 +1303,69 @@ a {
   height: 58px;
   background-color: #291057;
   color: #fff;
+}
+
+.shop-small__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shop-small__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 18%;
+  border: 1px solid #c2c2c2;
+  padding: 20px;
+  margin: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  min-height: 450px;
+}
+
+.shop-small__item:hover {
+  -webkit-box-shadow: 0 5px 21px rgba(8, 9, 9, 0.23);
+          box-shadow: 0 5px 21px rgba(8, 9, 9, 0.23);
+}
+
+.shop-small__item:hover a {
+  background-color: #e55a22;
+}
+
+.shop-small__img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.shop-small__name {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 29px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.shop-small__price {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #e55a22;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 28px;
 }
 /*# sourceMappingURL=style.css.map */
