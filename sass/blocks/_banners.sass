@@ -25,7 +25,48 @@
         width: 550px
         height: 200px
         background: url(../img/banners/banners-search.png) no-repeat center center
+        background-size: contain
     &__offer
         width: 550px
         height: 200px
         background: url(../img/banners/banners-offer.png) no-repeat center center
+        background-size: contain
+
+@media (max-width: 1200px)
+  .banners
+    &__wrap
+      justify-content: space-around
+    &__search
+      margin-bottom: 20px
+@media (max-width: 620px)
+  .banners
+    &__text
+        max-width: 230px
+    &__title
+        font-size: 22px
+        margin-bottom: 10px
+    &__description
+        font-size: 15px
+    &__search
+        width: 400px
+        height: 150px
+    &__offer
+        width: 400px
+        height: 150px
+
+@media (max-width: 425px)
+  .banners
+    &__text
+        max-width: 150px
+        padding-top: 10px
+    &__title
+        font-size: 18px
+        margin-bottom: 10px
+    &__description
+      display: none
+    &__search
+        width: 300px
+        height: 100px
+    &__offer
+        width: 300px
+        height: 100px

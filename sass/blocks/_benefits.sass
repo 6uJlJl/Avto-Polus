@@ -1,5 +1,5 @@
 .benefits
-    &-wrap 
+    &-wrap
         display: flex
         flex-wrap: wrap
     &__items
@@ -31,12 +31,12 @@
             left: 150px
         &-3:before
             left: 250px
-            
+
     &__welcome
         flex: 2
         background: url("../img/benefits/benefits-bg.png") no-repeat
         background-size: cover
-        height: 440px
+        height: 442px
         position: relative
     &__text
         max-width: 320px
@@ -53,3 +53,41 @@
             background-color: $blue
             top: 0
             left: 0
+
+@media (max-width: 1200px)
+  .benefits
+    &-wrap
+      flex-direction: column
+    &__items
+      flex-direction: row
+      flex-wrap: wrap
+      margin-bottom: 40px
+    &__description
+      &-1:before
+        left: 5%
+      &-2:before
+        left: 40%
+      &-3:before
+        left: 80%
+    &__welcome
+      width: 694px
+      min-height: 442px
+      margin: 0 auto
+@media (max-width: 768px)
+  .benefits
+    &__welcome
+      width: 100%
+      margin: 0 auto
+@media (max-width: 620px)
+  .benefits
+    &__items
+      justify-content: flex-start
+    &__text
+      max-width: 260px
+      font-size: 15px
+@media (max-width: 425px)
+  .benefits
+    &__text
+      max-width: 200px
+      font-size: 14px
+

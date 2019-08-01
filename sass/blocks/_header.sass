@@ -1,7 +1,7 @@
 .header
     display: block
     min-height: 110px
-    &-wrap 
+    &-wrap
         display: flex
         justify-content: space-between
         align-items: flex-end
@@ -25,7 +25,7 @@
     &__callback
         box-sizing: border-box
         display: block
-        width: 277px
+        width: 265px
         height: 40px
         background-color: $orange
         color: #fff
@@ -48,4 +48,82 @@
         right: 0
         background: url("../img/search.png") no-repeat center center $blue
         cursor: pointer
-    
+
+.burger-menu
+  display: none
+  cursor: pointer
+  &__line
+    display: block
+    width: 35px
+    height: 4px
+    background-color: $black
+    margin-bottom: 7px
+
+@media (max-width:1200px)
+  .header
+    &__search
+      width: 35%
+  .search
+    width: 77%
+
+@media (max-width:900px)
+  .header
+    margin-top: 20px
+    &-wrap
+      justify-content: space-between
+    &__search
+      order: 2
+      margin-top: 20px
+      width: 90%
+      text-align: center
+      position: relative
+  .search
+    width: 89%
+    &__image
+      right: 10px
+  .burger-menu
+    display: block
+    order: 2
+  .navbar
+    position: relative
+    background-color: #fff
+    &__ul
+      position: absolute
+      top: 0
+      left: 0
+      transform: translateY(-100%)
+      opacity: 0
+      transition: 0.2s
+      z-index: 2
+      pointer-events: none
+      background-color: #fff
+      padding: 20px
+      border: none !important
+      &--active
+        transform: translateY(0%);
+        opacity: 1
+        pointer-events: all
+
+@media (max-width:768px)
+  .search
+    width: 85%
+
+@media (max-width: 620px)
+  .header
+    &-wrap
+      flex-direction: column
+      align-items: center
+      position: relative
+  .burger-menu
+    position: absolute
+    top: 0
+    right: 0
+  .search
+    width: 80%
+@media (max-width: 425px)
+  .header
+    &__logo
+      padding-top: 30px
+    &__search
+      display: none
+

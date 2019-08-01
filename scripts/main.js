@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+  function changeBrandsSlider (number) {
+    var mySwiper1 = new Swiper ('.swiper-container-brands', {
+      // Optional parameters
+      slidesPerView: number,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    })
+  }
+
   // настройки слайдера в блоке slider
     var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
@@ -17,18 +32,12 @@ $(document).ready(function () {
     })
 
   // настройки слайдера в блоке brands
-    var mySwiper1 = new Swiper ('.swiper-container-brands', {
-      // Optional parameters
-      slidesPerView: 5,
-      spaceBetween: 0,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }
-    })
+  var width = $(window).width();
+  if ( width <= 425) { changeBrandsSlider(1) }
+  else if ( width <= 620) { changeBrandsSlider(2) }
+    else if ( width <= 900) { changeBrandsSlider(3) }
+      else if ( width <= 1200) { changeBrandsSlider(4) }
+        else { changeBrandsSlider(5) }
 
   // настройки слайдера на странице about
   var mySwiper1 = new Swiper ('.swiper-container-about', {
@@ -90,5 +99,52 @@ $(document).ready(function () {
       }
     });
   });
+
+  // мобильное меню
+  $(".burger-menu").click(()=>{
+    $(".navbar__ul").toggleClass("navbar__ul--active");
+  })
+
+  if ($(window).width() <= 900) {
+    $(".slider__image--1").attr("src","../img/slider/slide-1-small.png");
+    $(".slider__image--2").attr("src","../img/slider/slide-2-small.png");
+    $(".slider__image--3").attr("src","../img/slider/slide-3-small.png");
+    $(".slider__image--4").attr("src","../img/slider/slide-4-small.png");
+    $(".slider__image--5").attr("src","../img/slider/slide-5-small.png");
+  }
+
+  $("main").click((event)=>{
+      $(".navbar__ul").removeClass("navbar__ul--active");
+  });
+
+  $(window).scroll(()=>{
+    $(".navbar__ul").removeClass("navbar__ul--active");
+  });
+
+  $(window).resize(()=>{
+    $(".navbar__ul").removeClass("navbar__ul--active");
+    width = $(window).width();
+    if ( width <= 425) { changeBrandsSlider(1) }
+    else if ( width <= 620) { changeBrandsSlider(2) }
+      else if ( width <= 900) { changeBrandsSlider(3) }
+        else if ( width <= 1200) { changeBrandsSlider(4) }
+          else { changeBrandsSlider(5) }
+    if ( width <= 900 ) {
+      $(".slider__image--1").attr("src","../img/slider/slide-1-small.png");
+      $(".slider__image--2").attr("src","../img/slider/slide-2-small.png");
+      $(".slider__image--3").attr("src","../img/slider/slide-3-small.png");
+      $(".slider__image--4").attr("src","../img/slider/slide-4-small.png");
+      $(".slider__image--5").attr("src","../img/slider/slide-5-small.png");
+    }
+    else {
+      $(".slider__image--1").attr("src","../img/slider/slide-1.png");
+      $(".slider__image--2").attr("src","../img/slider/slide-2.png");
+      $(".slider__image--3").attr("src","../img/slider/slide-3.png");
+      $(".slider__image--4").attr("src","../img/slider/slide-4.png");
+      $(".slider__image--5").attr("src","../img/slider/slide-5.png");
+    }
+
+    //end resize
+  })
 
   });

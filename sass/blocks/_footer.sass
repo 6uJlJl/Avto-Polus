@@ -2,12 +2,13 @@
     margin-top: 70px
     background-color: $grey
     padding: 30px 0
-    &__nav 
+    &__nav
         display: flex
         justify-content: space-between
         flex-wrap: wrap
     &__contacts
         text-align: right
+        width: 50%
     &__ul
         list-style-type: none
         padding: 0
@@ -21,3 +22,17 @@
     &__a
         text-decoration: none
         color: #fff
+@media (max-width:  620px)
+  .footer
+    &__ul
+      font-size: 15px
+    &__li
+      margin-bottom: 10px
+@media (max-width:  425px)
+  .footer
+    &__nav
+      flex-direction: column
+    &__contacts
+      margin-top: 15px
+      text-align: left
+      width: 100%

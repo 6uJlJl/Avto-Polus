@@ -1,6 +1,6 @@
 .news
     margin-top: 60px;
-    &-wrap 
+    &-wrap
         display: flex
         flex-wrap: wrap
     &__company
@@ -64,4 +64,70 @@
     &__date
         font-size: 18px;
         color: $grey
-    
+
+@media (max-width: 1200px)
+  .news
+    &-wrap
+      flex-direction: column
+  .company
+    &__items
+      display: flex
+      justify-content: space-around
+      flex-wrap: wrap;
+    &__item
+  .kamaz
+    &__items
+      display: flex
+      flex-wrap: wrap
+    &__item
+      display: flex
+      justify-content: center
+@media (max-width: 900px)
+  .company
+    &__item:not(:last-child)
+      margin-bottom: 10px
+  .news
+    &__kamaz
+      margin-top: 30px
+  .kamaz
+    &__items
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+    &__image
+      margin-right: 0
+    &__item
+      display: flex
+      flex-direction: column
+
+@media (max-width: 620px)
+  .company
+    &__text
+      font-size: 18px
+    &__date
+      font-size: 16px
+  .kamaz
+    &__title
+      font-size: 18px
+      margin-top: 10px
+      margin-bottom: 10px
+    &__text
+      font-size: 18px
+    &__date
+      font-size: 16px
+@media (max-width: 425px)
+  .kamaz
+    &__image
+      width: 100%
+  .company
+    &__text
+      font-size: 16px
+    &__date
+      font-size: 14px
+  .kamaz
+    &__title
+      font-size: 16px
+    &__text
+      font-size: 16px
+    &__date
+      font-size: 14px

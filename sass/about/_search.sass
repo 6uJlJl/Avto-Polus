@@ -1,5 +1,6 @@
 .secondary
   &__search
+    margin-top: 20px
     background-color: #b3b3b3
   &__form
     padding: 5px 73px
@@ -31,7 +32,7 @@
       width: 1px
       height: 24px
       background-color: $grey
-      top: -1px
+      top: 0
       left: 35px
   &__submit
     width: 98px
@@ -44,6 +45,14 @@
     margin-left: 15px
     padding: 2px 25px
 
+@media (max-width: 768px)
+  .secondary
+    &__input
+      font-size: 15px
+@media (max-width: 620px)
+  .secondary
+    &__search
+      display: none
 
 
 

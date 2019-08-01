@@ -3,6 +3,9 @@
     &__wrapper
       position: relative
       margin-bottom: 40px
+      img
+        max-width: 100%
+        object-fit: cover
     &__info
       position: absolute
       width: 454px
@@ -61,3 +64,69 @@
       color: $black
   &__questions
     margin-top: 0
+
+@media (max-width: 1200px)
+  .price
+    &-main
+      &__info
+        width: 424px
+        height: 215px
+        margin-top: 36px
+@media (max-width: 900px)
+  .price
+    &-main
+      &__info
+        width: 320px
+        height: 170px
+        margin-top: 36px
+      &__title
+        font-size: 25px
+      &__subtitle
+        width: 200px;
+        padding-left: 50px
+      &__part2
+        &::before
+          width: 60px
+          height: 55px
+          background-size: cover
+@media (max-width: 768px)
+  .price
+    &-main
+      &__info
+        width: 250px
+        height: 150px
+        margin-left: 25px
+        margin-top: 15px
+        margin-right: 25px
+      &__title
+        font-size: 20px
+      &__subtitle
+        width: 200px;
+        padding-left: 60px
+        font-size: 14px
+      &__part2
+        &::before
+          left: 15px
+
+@media (max-width: 620px)
+  .price
+    &-main
+      &__wrapper
+        img
+          height: 200px
+
+@media (max-width: 425px)
+  .price
+    &-main
+      &__info
+        width: 230px
+      &__title
+      &__subtitle
+        width: 200px;
+        padding-left: 50px
+        font-size: 14px
+      &__part2
+        &::before
+          top: 20px
+          width: 41px
+          height: 37px

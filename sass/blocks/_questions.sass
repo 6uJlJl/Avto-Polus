@@ -1,9 +1,9 @@
 .questions
     margin-top: 65px
-    &-wrap 
+    &-wrap
         width: 100%
         height: 553px
-        background: url("../img/questions/questions-bg.png")
+        background: url("../img/questions/questions-bg.png") right
         position: relative
     &__form
         height: 523px
@@ -53,3 +53,39 @@
         text-transform: uppercase
         width: 263px
         height: 60px
+
+@media (max-width: 768px)
+  .questions
+    &__form
+        height: 523px
+        width: 60%
+        margin: 0 auto
+@media (max-width: 620px)
+  .form
+    &__title
+      font-size: 25px
+    &__button
+      width: 90%
+@media (max-width: 620px)
+  .questions
+    &-wrap
+      height: 430px
+    &__form
+      height: 400px
+      width: 80%
+  .form
+    &__title
+      font-size: 20px
+    &__name
+      font-size: 15px
+    &__phone
+      font-size: 15px
+    &__text
+      font-size: 15px
+      width: 75%
+    &__button
+      height: 50px
+@media (max-width: 425px)
+  .form
+    &__text
+      width: 72%
